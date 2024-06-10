@@ -1,0 +1,12 @@
+## APIVersion: 101042
+## Title: |cFF7777HowLong|r|c7777FFSaxhleel|r
+## Version: 1.0
+## AddOnVersion: 1
+## Author: |c8E4DFF@KrykiZZ|r, 
+## Description: Adds icon which tells how long your Saxhleel buff will last.
+## SavedVariables: HowLongSaxhleel_Data
+## DependsOn: LibAddonMenu-2.0
+
+HowLongSaxhleel.lua
+HowLongSaxhleel_UI.lua
+HowLongSaxhleel_Utils.lua
