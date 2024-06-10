@@ -7,6 +7,9 @@
 ## SavedVariables: HowLongSaxhleel_Data
 ## DependsOn: LibAddonMenu-2.0
 
+lang/en.lua
+lang/$(language).lua
+
 HowLongSaxhleel.lua
 HowLongSaxhleel_UI.lua
 HowLongSaxhleel_Utils.lua

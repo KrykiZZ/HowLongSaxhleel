@@ -1,6 +1,7 @@
 -- AddOn information.
 HowLongSaxhleel = HowLongSaxhleel or {}
 HowLongSaxhleel.name = "HowLongSaxhleel"
+HowLongSaxhleel.version = "1.0.1"
 
 -- Settings.
 HowLongSaxhleel.variables = nil
@@ -54,8 +55,13 @@ function HowLongSaxhleel:InitializeAddonMenu()
     local panelName = HowLongSaxhleel.name .. "Settings"
     local panel = LAM:RegisterAddonPanel(panelName, {
         type = "panel",
-        name = HowLongSaxhleel.name .. " Settings",
-        author = "|c8E4DFF@KrykiZZ|r",
+        name = HowLongSaxhleel.name,
+        author = "|c8E4DFF@KrykiZZ|r [PC/EU]",
+        version = HowLongSaxhleel.version,
+        
+        website = "https://www.esoui.com/downloads/info3891-HowLongSaxhleel.html",
+        feedback = "https://www.esoui.com/portal.php?uid=75826&a=bugreport",
+        translation = "https://www.esoui.com/portal.php?uid=75826"
     })
     
     local choices = {}
@@ -67,7 +73,7 @@ function HowLongSaxhleel:InitializeAddonMenu()
     LAM:RegisterOptionControls(panelName, {
         {
             type = "checkbox",
-            name = "Show Only In Combat",
+            name = SI_CK_SETTINGS_ONLY_IN_COMBAT,
             default = false,
             width = "half",
             getFunc = function() return HowLongSaxhleel.variables.isCombatOnly end,
@@ -78,7 +84,7 @@ function HowLongSaxhleel:InitializeAddonMenu()
         },
         {
             type = "iconpicker",
-            name = "Icon",
+            name = SI_CK_SETTINGS_ICON,
             iconSize = 50,
             default = GetItemLinkIcon("|H0:item:173875:362:50:0:0:0:0:0:0:0:0:0:0:0:2048:122:0:0:0:10000:0|h|h"),
             choices = choices,
